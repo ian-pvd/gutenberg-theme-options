@@ -6,3 +6,42 @@
 p {
 	text-indent: 1.5rem;
 }
+
+/* Add background color options to blocks */
+.has-red-background-color {
+	background-color: #E12627;
+}
+
+.has-gray-dark-background-color {
+	background-color: #414242;
+}
+
+.has-blue-background-color {
+	background-color: #3EC1CC;
+}
+
+.has-green-background-color {
+	background-color: #99D04A;
+}
+
+.has-red-background-color,
+.has-gray-dark-background-color {
+	color: white;
+}
+
+/* Add font color options to blocks */
+.has-red-color {
+	color: #E12627;
+}
+
+.has-gray-dark-color {
+	color: #414242;
+}
+
+.has-blue-color {
+	color: #3EC1CC;
+}
+
+.has-green-color {
+	color: #99D04A;
+}
