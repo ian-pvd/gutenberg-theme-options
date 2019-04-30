@@ -87,5 +87,11 @@ function gutenberg_theme_support_options() {
 	// Enqueue core block styles on the front end.
 	add_theme_support( 'wp-block-styles' );
 
+	// Enable support for responsive embeds.
+	add_theme_support( 'responsive-embeds' );
+
+	// Add theme support for full-width and wide images.
+	add_theme_support( 'align-wide' );
+
 }
 add_action( 'after_setup_theme', 'gutenberg_theme_support_options' );
