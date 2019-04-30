@@ -93,5 +93,8 @@ function gutenberg_theme_support_options() {
 	// Add theme support for full-width and wide images.
 	add_theme_support( 'align-wide' );
 
+	// Enable Gutenberg Dark Mode.
+	// add_theme_support( 'dark-editor-style' );
+
 }
 add_action( 'after_setup_theme', 'gutenberg_theme_support_options' );
