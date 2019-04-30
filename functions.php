@@ -129,6 +129,9 @@ function uve_got_options_scripts() {
 	if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {
 		wp_enqueue_script( 'comment-reply' );
 	}
+
+	// Enqueue Gutenberg Theme Options styles for the front end.
+	wp_enqueue_style( 'uve-got-options-post-styles', get_template_directory_uri() . '/post-content.css' );
 }
 add_action( 'wp_enqueue_scripts', 'uve_got_options_scripts' );
 
