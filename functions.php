@@ -159,3 +159,7 @@ if ( defined( 'JETPACK__VERSION' ) ) {
 	require get_template_directory() . '/inc/jetpack.php';
 }
 
+/**
+ * Theme Hooks
+ */
+require get_template_directory() . '/inc/theme-hooks.php';
