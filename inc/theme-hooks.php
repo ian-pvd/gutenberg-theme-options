@@ -84,5 +84,8 @@ function gutenberg_theme_support_options() {
 	// Disable custom font sizes.
 	add_theme_support('disable-custom-font-sizes');
 
+	// Enqueue core block styles on the front end.
+	add_theme_support( 'wp-block-styles' );
+
 }
 add_action( 'after_setup_theme', 'gutenberg_theme_support_options' );
