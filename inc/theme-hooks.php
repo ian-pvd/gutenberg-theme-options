@@ -49,5 +49,40 @@ function gutenberg_theme_support_options() {
 	// Disable custom theme colors.
 	add_theme_support( 'disable-custom-colors' );
 
+	// Add named font size options.
+	add_theme_support(
+		'editor-font-sizes',
+		[
+			[
+				'name' => __( 'Small', 'uve-got-options' ),
+				'size' => 10,
+				'slug' => 'small'
+			],
+			[
+				'name' => __( 'Normal', 'uve-got-options' ),
+				'size' => 16,
+				'slug' => 'normal'
+			],
+			[
+				'name' => __( 'Large', 'uve-got-options' ),
+				'size' => 20,
+				'slug' => 'large'
+			],
+			[
+				'name' => __( 'Huge', 'uve-got-options' ),
+				'size' => 32,
+				'slug' => 'huge'
+			],
+			[
+				'name' => __( 'Ludicrous', 'uve-got-options' ),
+				'size' => 64,
+				'slug' => 'ludicrous'
+			],
+		]
+	);
+
+	// Disable custom font sizes.
+	add_theme_support('disable-custom-font-sizes');
+
 }
 add_action( 'after_setup_theme', 'gutenberg_theme_support_options' );
